@@ -11,6 +11,7 @@ import AbsenceForm from "./pages/AbsenceForm";
 import ReturnToWorkForm from "./pages/ReturnToWorkForm";
 import Evaluation from "./pages/Evaluation";
 import Records from "./pages/Records";
+import { Profile } from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/absence-form" element={<Layout><AbsenceForm /></Layout>} />
           <Route path="/return-to-work" element={<Layout><ReturnToWorkForm /></Layout>} />
           <Route path="/records" element={<Layout><Records /></Layout>} />
+          <Route path="/profile" element={<Layout><Profile /></Layout>} />
           
           {/* 404 page */}
           <Route path="*" element={<NotFound />} />

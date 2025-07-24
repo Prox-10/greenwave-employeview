@@ -5,7 +5,8 @@ import {
   UserX, 
   RotateCcw, 
   FileText, 
-  LogOut 
+  LogOut,
+  User
 } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 import {
@@ -27,6 +28,7 @@ const navigationItems = [
   { title: "Absence Form", url: "/absence-form", icon: UserX },
   { title: "Return to Work Form", url: "/return-to-work", icon: RotateCcw },
   { title: "Leave/Absence Records", url: "/records", icon: FileText },
+  { title: "Profile Settings", url: "/profile", icon: User },
 ];
 
 export function AppSidebar() {
