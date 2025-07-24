@@ -61,11 +61,11 @@ export function AppSidebar() {
             <SidebarMenu>
               {navigationItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
+                  <SidebarMenuButton>
                     <NavLink
                       to={item.url}
                       className={({ isActive }) =>
-                        `flex items-center gap-3 px-3 py-2 rounded-lg transition-colors ${
+                        `flex items-center gap-3 px-3 py-2 rounded-lg transition-colors w-full ${
                           isActive
                             ? "bg-primary text-primary-foreground"
                             : "hover:bg-muted"
@@ -84,10 +84,10 @@ export function AppSidebar() {
 
         {/* Logout at bottom */}
         <div className="mt-auto p-4 border-t">
-          <SidebarMenuButton asChild>
+          <SidebarMenuButton>
             <NavLink
               to="/"
-              className="flex items-center gap-3 px-3 py-2 rounded-lg transition-colors hover:bg-destructive hover:text-destructive-foreground"
+              className="flex items-center gap-3 px-3 py-2 rounded-lg transition-colors hover:bg-destructive hover:text-destructive-foreground w-full"
             >
               <LogOut className="h-4 w-4" />
               {!collapsed && <span className="text-sm">Logout</span>}
